@@ -1,0 +1,7 @@
+<a target="_blank" href="https://familyzone.com" [hidden]="!idle">
+  <img class="idle-img" src="{{ idleImage }}" />
+</a>
+
+<div [hidden]="idle" class="busy-status">
+  <span>{{ busyText }}</span> <img src="{{ busyImage }}" />
+</div>

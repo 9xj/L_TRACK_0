@@ -1,0 +1,29 @@
+module.exports = "
+<div class="panel" [hidden]="!ready">
+  <img class="user-icon" src="/assets/imgs/icon_user.png" />
+
+  <div class="user-detail">
+    <span>This device belongs to</span>
+
+    <h2>{{ userFullName }}</h2>
+  </div>
+
+  <div class="routine-detail">
+    <span>Currently</span>
+
+    <div class="routine-icon">
+      <img src="/assets/imgs/icon_{{ userRoutine }}_on.png" />
+
+      <h2>{{ userRoutine[0].toUpperCase() + userRoutine.substring(1) }}</h2>
+    </div>
+  </div>
+
+  <input
+    class="form-control"
+    type="submit"
+    value="REQUEST CHANGE"
+    style="margin-top: 65px;"
+    (click)="requestChange()"
+  />
+</div>
+";

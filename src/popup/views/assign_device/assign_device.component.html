@@ -1,0 +1,44 @@
+<div class="panel">
+  <h1 class="title">Assign Device</h1>
+  <div class="description">
+    <p>
+      Please provide a name for this device and select the user that primarily
+      uses it
+    </p>
+  </div>
+
+  <form
+    novalidate
+    class="input-form"
+    [formGroup]="assignDeviceForm"
+    (submit)="assignDevice()"
+  >
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Device name"
+      formControlName="deviceName"
+    />
+
+    <ng-select
+      class="form-control"
+      (search)="searchUsers($event)"
+      [items]="userDetails"
+      bindLabel="name"
+      formControlName="deviceUser"
+      placeholder="Select a user to assign"
+      notFoundText="No matching users found"
+      dropdownPosition="bottom"
+    >
+      <ng-template ng-option-tmp let-item="item">
+        <p>{{ item.user.name.firstName }} {{ item.user.name.lastName }}</p>
+        <strong
+          *ngIf="item.user.orgMembership && item.user.orgMembership.group"
+          >{{ item.user.orgMembership.group.name }}</strong
+        >
+      </ng-template>
+    </ng-select>
+
+    <input class="form-control" type="submit" value="ASSIGN DEVICE" />
+  </form>
+</div>

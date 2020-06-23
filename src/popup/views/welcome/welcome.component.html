@@ -1,0 +1,38 @@
+<div class="panel">
+  <h1 class="title">Welcome</h1>
+  <div class="description">
+    <p>
+      Family Zone provides protection for computers and mobile devices at home,
+      work, school and on the go.
+      <br />
+      Sign in to get started
+    </p>
+  </div>
+
+  <form
+    class="input-form"
+    novalidate
+    [formGroup]="loginForm"
+    (submit)="signIn()"
+  >
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Username or email"
+      formControlName="username"
+    />
+    <input
+      class="form-control"
+      type="password"
+      placeholder="Password"
+      formControlName="password"
+    />
+    <input class="form-control" type="submit" value="SIGN IN" />
+  </form>
+
+  <div style="" class="signup-prompt">
+    <a target="_blank" href="https://www.familyzone.com/agentsetup"
+      >No account? Get started for free</a
+    >
+  </div>
+</div>

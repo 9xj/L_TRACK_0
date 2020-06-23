@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  width: 317px;
+  min-height: 500px;
+  max-width: 317px;
+  max-height: 500px;
+  background: #ececec;
+  padding: 10px;
+}
+
+input.form-control {
+  background: #ececec;
+  border: #aaa 1px solid;
+  height: 35px;
+  width: 275px;
+  margin: 15px 0 0 17px;
+  font-size: 12px;
+}
+
+input.form-control[type="submit"] {
+  background: #1987d6;
+  border-radius: 5px;
+  border: 0px;
+  height: 35px;
+  width: 275px;
+  margin: 15px 0 0 17px;
+  color: #fff;
+  font-size: 14px;
+}
+
+input.form-control[type="submit"]:hover {
+  background: #1964ab;
+  cursor: pointer;
+}
+
+select.form-control {
+  background: #ececec;
+  border: #aaa 1px solid;
+  height: 35px;
+  width: 275px;
+  margin: 15px 0 0 17px;
+  font-size: 12px;
+}
+
+ng-select.form-control .ng-select-container {
+  width: 280px !important;
+  margin: 15px 0 0 17px;
+  background-color: #ececec !important;
+  border: #aaa 1px solid !important;
+  height: 35px !important;
+  font-size: 12px;
+}

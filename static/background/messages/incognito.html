@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Incognito Access Required - Family Zone</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/background/messages/bootstrap.min.css" />
+    <link rel="stylesheet" href="/background/messages/common_style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="https://www.familyzone.com/">
+        <img
+          src="/assets/imgs/logo_family_zone_horizontal.svg"
+          class="navbar-brand"
+          title="Family Zone"
+          alt="Family Zone Logo"
+        />
+      </a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              class="card-icon"
+              src="/assets/imgs/circle_icon_exclamation.svg"
+            />
+            <div class="card-body">
+              <h2>Important Message for Chromebook Users</h2>
+              <p class="mt-3">
+                To ensure this Chromebook is fully protected, you need to allow
+                the Mobile Zone extension to run incognito mode.
+              </p>
+              <p>
+                Attempts to disable this setting will be logged and reported to
+                the device administrator.
+              </p>
+              <p>
+                Launch the
+                <a href="#" id="goToExtension">extension browser</a> and check
+                "Allow in incognito" for the Mobile Zone extension.
+              </p>
+              <img
+                style="width: 100%;"
+                src="/assets/imgs/incognito_screenshot.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="/background/messages/incognito.js"
+    ></script>
+  </body>
+</html>

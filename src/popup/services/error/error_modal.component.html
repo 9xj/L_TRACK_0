@@ -1,0 +1,17 @@
+<div [@state]="currentState" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-title">
+      <img src="/assets/imgs/fz_icon_64.png" />
+      <h1>Error</h1>
+    </div>
+    <div class="modal-body">
+      <p [innerHTML]="modalMessage"></p>
+    </div>
+    <input
+      type="button"
+      value="CLOSE"
+      class="modal-button"
+      (click)="closeModal()"
+    />
+  </div>
+</div>

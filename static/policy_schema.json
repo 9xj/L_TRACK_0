@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "disable_incognito_check": {
+      "title": "Disable Incognito Permission Check",
+      "description": "When set to true, the incognito mode access check will be disabled, useful when incognito mode is disabled by G Suite policy",
+      "type": "boolean"
+    },
+    "auto_enrolment": {
+      "type": "object",
+      "properties": {
+        "zone_username": {
+          "title": "Zone Username",
+          "description": "Specifies the zone admin username to use for automatic device assignment",
+          "type": "string"
+        },
+        "zone_password": {
+          "title": "Zone Password",
+          "description": "Specifies the zone admin password to use for automatic device assignment",
+          "type": "string"
+        },
+        "zone_user_id": {
+          "title": "Zone User ID",
+          "description": "Specifies the zone user ID to use assign the device to during automatic device assignment",
+          "type": "string"
+        },
+        "zone_id": {
+          "title": "Zone ID",
+          "description": "Specifies the ID of the zone the user resides in",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

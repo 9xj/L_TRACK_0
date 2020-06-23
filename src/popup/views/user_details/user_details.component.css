@@ -1,0 +1,47 @@
+.panel h1.title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 25px 25px 0px;
+  font-size: 3em;
+}
+
+.panel .description p {
+  text-align: center;
+  padding: 0px 45px;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+
+.panel img.user-icon {
+  position: absolute;
+  top: 30px;
+  left: 135px;
+}
+
+.panel .user-detail {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.panel .user-detail span {
+  color: #999;
+}
+
+.panel .routine-detail {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.panel .routine-detail span {
+  color: #999;
+}
+
+.panel .routine-detail .routine-icon img {
+  vertical-align: middle;
+}
+
+.panel .routine-detail .routine-icon h2 {
+  display: inline-block;
+}

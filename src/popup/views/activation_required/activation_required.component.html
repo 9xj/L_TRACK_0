@@ -1,0 +1,20 @@
+<div class="panel">
+  <h1 class="title">Account activation required</h1>
+  <div class="description">
+    <p>
+      This device has been registered to Family Zone for the provisional
+      account: <strong>{{ userEmail }}</strong
+      >, but that account has not yet been activated.
+    </p>
+    <p>
+      An email with activation instructions been sent to the above address.
+    </p>
+  </div>
+
+  <input
+    class="form-control"
+    type="submit"
+    value="RESEND EMAIL"
+    (click)="resendEmail()"
+  />
+</div>
